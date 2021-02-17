@@ -1,0 +1,102 @@
+$base: #d0354a;
+
+.MuiButton-contained {
+    box-shadow: none !important;
+}
+
+.MuiButton-contained.Mui-disabled {
+    color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(208, 53, 74, 0.3) !important;
+}
+
+.calculator {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px;
+
+    &-viewport {
+        display: block;
+        max-width: 700px;
+        padding: 25px;
+        margin: 0 auto;
+        border-radius: 7px;
+        overflow: hidden;
+        background-color: rgba($base, 0.04);
+    }
+
+    &-headline {
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+
+        > small {
+            font-weight: 300;
+            font-style: italic;
+            text-transform: none;
+            display: block;
+        }
+
+        // padding-bottom: 15px;
+
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: 0;
+        //     display: block;
+        //     width: 60px;
+        //     height: 5px;
+        //     background-color: $base;
+        // }
+    }
+
+    &-form {
+        &-step {
+            display: block;
+            border-radius: 5px;
+
+            + .calculator-form-step {
+                margin-top: 30px;
+            }
+        }
+
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 13px;
+
+            &-item {
+                width: calc(50% - 12.5px);
+                flex: 0 0 calc(50% - 12.5px);
+            }
+        }
+
+        &-input {
+            > p {
+                font-weight: 300;
+                margin-bottom: 20px;
+                display: block;
+                padding: 20px 25px;
+                background-color: #ffffff;
+                border-left: 5px solid $base;
+                border-radius: 3px;
+            }
+
+            &.are-checkboxes > p {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-submit {
+            padding-top: 25px;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
