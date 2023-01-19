@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Calculator } from '@components/Calculator';
+import { Calculator } from './components/Calculator';
 
 import './App.scss';
 
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette: {
         primary: {
           main: '#d0354a',
